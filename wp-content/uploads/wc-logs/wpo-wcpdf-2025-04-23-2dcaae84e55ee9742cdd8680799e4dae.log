@@ -1,0 +1,23 @@
+2025-04-23T17:56:07+00:00 INFO Template setting migrated from C:/xampp/htdocs/wordpress/wp-content/plugins/woocommerce-pdf-invoices-packing-slips/templates/Simple to default/Simple
+2025-04-23T18:00:33+00:00 CRITICAL Table 'wordpress_msie.bouba_wcpdf_invoice_number' doesn't exist
+2025-04-23T18:00:33+00:00 CRITICAL Error trying to generate document: #0 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Adapter\CPDF.php(672): WPO\IPS\Vendor\Dompdf\Cpdf->addPngFromFile('file://C:\\xampp...', 57.442913385827, 755.84151552756, 287.63650393701, 56.952027779528)
+#1 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer\Image.php(63): WPO\IPS\Vendor\Dompdf\Adapter\CPDF->image('file://C:\\xampp...', 57.442913385827, 29.096456692913, 287.63650393701, 56.952027779528, 'normal')
+#2 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(305): WPO\IPS\Vendor\Dompdf\Renderer\Image->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\Image))
+#3 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(140): WPO\IPS\Vendor\Dompdf\Renderer->_render_frame('image', Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\Image))
+#4 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(207): WPO\IPS\Vendor\Dompdf\Renderer->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\Image))
+#5 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(207): WPO\IPS\Vendor\Dompdf\Renderer->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\TableCell))
+#6 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(207): WPO\IPS\Vendor\Dompdf\Renderer->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\TableRow))
+#7 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(207): WPO\IPS\Vendor\Dompdf\Renderer->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\TableRowGroup))
+#8 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Renderer.php(207): WPO\IPS\Vendor\Dompdf\Renderer->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\Table))
+#9 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\FrameReflower\Page.php(149): WPO\IPS\Vendor\Dompdf\Renderer->render(Object(WPO\IPS\Vendor\Dompdf\FrameDecorator\Block))
+#10 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\FrameDecorator\AbstractFrameDecorator.php(905): WPO\IPS\Vendor\Dompdf\FrameReflower\Page->reflow(NULL)
+#11 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\vendor\strauss\dompdf\dompdf\src\Dompdf.php(808): WPO\IPS\Vendor\Dompdf\FrameDecorator\AbstractFrameDecorator->reflow()
+#12 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\includes\Makers\PDFMaker.php(63): WPO\IPS\Vendor\Dompdf\Dompdf->render()
+#13 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\includes\Documents\OrderDocument.php(1493): WPO\IPS\Makers\PDFMaker->output()
+#14 C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce-pdf-invoices-packing-slips\includes\Settings.php(337): WPO\IPS\Documents\OrderDocument->preview_pdf()
+#15 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(324): WPO\IPS\Settings->ajax_preview('')
+#16 C:\xampp\htdocs\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#17 C:\xampp\htdocs\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#18 C:\xampp\htdocs\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_wpo_wcp...')
+#19 {main}
+2025-04-23T20:15:59+00:00 CRITICAL Table 'wordpress_msie.bouba_wcpdf_packing_slip_number' doesn't exist
